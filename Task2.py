@@ -12,8 +12,16 @@ import string
 stroka = 'пара-ра-рам рам-пам-папам па-ра-па-дам'
 
 wovels = ('А','О','У','Ы','Э','Е','Ё','И','Ю','Я')
+list1 = []
+count= 0
+stroka = stroka.upper().split()
 
-
-print(type(wovels))
-print(stroka.upper())
+for i in stroka:
+    for j in i:
+        if j in wovels:
+            count += 1
+    list1.append(count)
+    count = 0
+            
+print(list1)
 
