@@ -24,6 +24,8 @@ else:
                 count += 1
         list1.append(count)
         count = 0
-            
-    print(list1)
-
+    for i in range(1, len(list1)):
+        if list1[i] == list1[0]:
+            print("Парам пам-пам")
+        else:
+            print("Пам парам")
