@@ -15,13 +15,15 @@ wovels = ('А','О','У','Ы','Э','Е','Ё','И','Ю','Я')
 list1 = []
 count= 0
 stroka = stroka.upper().split()
-
-for i in stroka:
-    for j in i:
-        if j in wovels:
-            count += 1
-    list1.append(count)
-    count = 0
+if len(stroka) < 2:
+    print("Количество фраз должно быть больше одной!")
+else:
+    for i in stroka:
+        for j in i:
+            if j in wovels:
+                count += 1
+        list1.append(count)
+        count = 0
             
-print(list1)
+    print(list1)
 
